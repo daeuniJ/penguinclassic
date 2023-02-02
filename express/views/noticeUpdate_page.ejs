@@ -1,0 +1,37 @@
+<section class="topArea">
+    <img src="img/topArea/topArea_notice.jpg">
+    <div class="inner_topArea w1510">
+        <h2>수정 페이지 <span>Notice Modify</span></h2>
+    </div>
+</section>
+<section class="topArea_tit">
+    <div class="w1510">
+        <div class="topArea_txt">
+            <h3>공지 수정</h3>
+        </div>
+    </div>
+</section>
+<form action="" method="post">
+<div class="form_wrap w1280">
+    <div>
+        <label class="write_label">작성자 :&nbsp;</label>
+        <input type="text" name="writer" class="conBox conBoxA">
+    </div>
+    <div>
+        <label class="write_label notiLabelT">날&ensp;짜 :&nbsp;</label>
+        <input type="date" name="date" class="conBox conBoxA">
+    </div>
+    <div>
+        <label class="write_label notiLabelT">제&ensp;목 :&nbsp;</label>
+        <input type="text" name="title" class="conBox">
+    </div>
+    <div class="write_content">
+        <label class="write_label notiLabelT">내&ensp;용 :&nbsp;</label>
+        <textarea name="content" id="content" cols="100" rows="10"></textarea>
+    </div>
+</div>
+<div class="btnWrap w1280">
+    <input type="submit" value="수정" class="btnClick" onclick="location.href='/noticeList'">
+    <input type="button" value="취소" class="btnBack" onclick="location.href='/noticeList'">
+</div>
+</form>

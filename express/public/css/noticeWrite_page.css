@@ -1,0 +1,66 @@
+.write_label{
+    color: #fff;
+    margin-right: 20px;
+    font-size: 20px;
+}
+form{
+    margin: 0 auto;
+}
+.form_wrap{
+    width: 100%;
+}
+.form_wrap>div{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+.conBoxA{
+    width: 20% !important;
+}
+.conBox{
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border: 1px solid #fff;
+}
+.notiLabelT{
+    margin-left: 9px;
+}
+.write_content{
+    display: inline-flex;
+}
+textarea[name="content"]{
+    width: 80%;
+    height: 500px;
+    background-color: #fff;
+}
+
+.btnWrap{
+    width: 100%;
+    text-align: right;
+}
+.btnWrap>*{
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    border: 0;
+}
+.btnClick{
+    background-color: #ff6815;
+    margin-right: 10px;
+}
+.btnBack{
+    background-color: #231F20;
+    border: 1px solid #fff !important;
+}
+
+/* 반응형 1220px */
+@media (max-width: 1220px) {
+    .btnWrap{
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+}

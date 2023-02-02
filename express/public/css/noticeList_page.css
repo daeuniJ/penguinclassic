@@ -1,0 +1,117 @@
+.noticeList{
+    width: 100%;
+    background-color: #231F20;
+}
+.noticeList_wrap{
+    padding: 70px 0;
+    border-top: 2px solid #ff6815;
+}
+.noticeCon_list>ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ff6815;
+}
+.noticeCon_list>ul>li{
+    width: calc(30% - 20px);
+    position: relative;
+    background-color: #FAFAFA;
+    transition: border 0.3s;
+    cursor: pointer;
+    margin: 20px 2.4%;
+}
+.hoverBox{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #231F20;
+    transition-duration: .3s;
+}
+.hoverBox:hover{
+    border: 13px solid #ff6815;
+    box-sizing: border-box;
+}
+.noticeCon_list>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 430px;
+    padding: 40px 40px 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #231F20;
+}
+.listCon_txt{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.listCon_txt>p{
+    /* height: calc(30% - 15px); */
+    margin-top: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical
+}
+.listCon_txt>p:nth-child(1){
+   -webkit-line-clamp: 2; 
+}
+.listCon_txt>p:nth-child(2){
+   -webkit-line-clamp: 4; 
+}
+
+.notiW_btn_wrap{
+    margin-top: 20px;
+    text-align: right;
+}
+.notiW_btn{
+    width: 100px;
+    height: 50px;
+    background-color: #ff6815;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+}
+
+
+/* 반응형 1220px */
+@media (max-width: 1220px) {
+    .noticeCon_list>ul>li{
+        height: 420px;
+    }
+    .notiW_btn_wrap{
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+}
+
+
+/* 반응형 850px */
+@media (max-width: 850px) {
+    .noticeCon_list>ul>li{
+        width: calc(50% - 20px);
+        margin: 20px 1.2%;
+    }
+}
+
+/* 반응형 470px */
+@media (max-width: 470px) {
+    .noticeCon_list>ul>li{
+        width: calc(100% - 20px);
+        margin: 20px 1.2%;
+    }
+    .listCon_date>p{
+        font-size: 16px;
+    }
+    .listCon_date>h3{
+        font-size: 20px;
+    }
+    .listCon_txt>p{
+        font-size: 20px;
+    }
+  }

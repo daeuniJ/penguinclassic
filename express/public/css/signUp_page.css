@@ -1,0 +1,64 @@
+.signUp_topArea>img{
+  filter: brightness(.8);
+}
+.signUp{
+    width: 100%;
+    background-color: #231F20;
+}
+.signUp_wrap{
+    padding: 70px 0;
+    box-sizing: border-box;
+    border-top: 2px solid #ff6815;
+}
+.signUpForm{
+  width: 100%;
+  /* padding: 20px 2.4%;
+  box-sizing: border-box; */
+}
+.sp_title{
+  color: #fff;
+}
+.sp_input{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #fff;
+  border-right: 0;
+  margin-bottom: 30px;
+  background-color: #231F20;
+  color: #FAFAFA; 
+  outline: none;
+  box-sizing: border-box;
+}
+.signUpTable{
+  width: 50%;
+  margin: 0 auto;
+}
+.signUpTable tr{
+  display: flex;
+  flex-direction: column;
+}
+.signUpBtn_wrap{
+  width: 100%;
+  border-top: 1px solid #ff6815;
+  text-align: right;
+}
+.signUpBtn_wrap>*{
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  border: 0;
+}
+#sp_p_num{
+  margin-bottom: 70px;
+}
+
+/* 반응형 1220px */
+@media (max-width: 1220px) {
+  .signUpBtn_wrap{
+      padding: 0 30px;
+      box-sizing: border-box;
+  }
+}

@@ -1,0 +1,229 @@
+footer{
+    padding: 65px 0 95px;
+    background-color: #FAFAFA;
+}
+.inner_footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer_leftCon{
+    width: 45%;
+}
+.footer_leftCon img{
+    width: 150px;
+    height: auto;
+}
+.footer_address{
+    margin-top: 40px;
+    line-height: 1.5;
+}
+.footer_address>p{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.footer_link{
+    margin-top: 40px;
+}
+.footer_link a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+}
+.footer_link>*{
+    width: 35%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    font-size: 14px;
+}
+.footer_fac{
+    background-color: #FF6815;
+}
+.footer_reception{
+    background-color: #231F20;
+    margin-top: 10px;
+}
+.footer_copyright{
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+
+.footer_rightCon{
+    width: 45%;
+}
+.typos_top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding: 35px 0;
+    border-bottom: 1px solid #ddd;
+}
+.typos_top::after{
+    display: block;
+    content: '';
+    width: 170px;
+    height: 2px;
+    background-color: #FF6815;
+    position: absolute;
+    bottom: -1px; left: 0;
+}
+.typos_top>h4{
+    display: inline-block;
+}
+.typos_top>h4>span{
+    font-size: 20px;
+    margin-left: 15px;
+}
+.personInfo{
+    display: inline-block;
+}
+.personInfo>span{
+    background-color: #FF6815;
+    color: #fff;
+    border-radius: 50px;
+    padding: 2px 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.personInfo>div{
+    display: inline-block;
+}
+input[id="footer_check"]{
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 1px solid #dddddd;
+    border-radius: 50px;
+    opacity: 0;
+    margin-right: 9px;
+    z-index: 999;
+    cursor: pointer;
+}
+label[for="footer_check"]{
+    font-size: 14px;
+    padding-left: 5px;
+    color: #FF6815;
+    position: relative;
+}
+input[id="footer_check"]+label:before{
+    display: inline-block;
+    content: '';
+    width: 20px; height: 20px;
+    position: absolute;
+    top: -1px; left: -23px;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+input[id="footer_check"]:checked+label:before{
+    border-color: #FF6815;
+    background-color: #FF6815;
+    box-shadow: inset 0 0 0 5px #fff;
+}
+.typos_bottom{
+    padding-top: 40px;
+}
+.typos_bottom>ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.typos_bottom>ul li{
+    width: calc(50% - 40px);
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+    background-color: #FAFAFA;
+}
+.typos_bottom>ul li:last-child{
+    width: 100%;
+    margin-top: 55px;
+}
+.typos_bottom li>input{
+    width: 100%;
+    height: 50px;
+    appearance: none;
+    outline: none;
+    border: 0;
+}
+textarea[name="typos_content"]{
+    appearance: none;
+    border: 0;
+    resize: none;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    outline: none;
+}
+#typos_content::placeholder{
+    color: #777;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.footer_typosBtn{
+    margin-top: 33px;
+    text-align: right;
+}
+.typosBtn{
+    width: 160px;
+    height: 60px;
+    background-color: #FF6815;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+
+@media (max-width:1366px) {
+    .typos_top>h4>span{
+        font-size: 1.46vw;
+    }
+    .footer_address{
+        font-size: 1.17vw;
+    }
+    .footer_address>p{
+        font-size: 1.17vw;
+    }
+    
+}
+@media (max-width:1000px) {
+    .inner_footer{
+        flex-direction: column-reverse;
+    }
+    .footer_leftCon{
+        width: 100%;
+    }
+    .footer_rightCon{
+        width: 100%;
+    }
+    .footer_link>*{
+        min-width: 150px;
+    }
+}
+@media (max-width:850px) {
+    .typos_top>h4{
+        font-size: 20px;
+    }
+    .typos_top>h4>span{
+        font-size: 14px;
+    }
+    .footer_address{
+        font-size: 12px;
+    }
+    .footer_address>p{
+        font-size: 12px;
+    }
+}
