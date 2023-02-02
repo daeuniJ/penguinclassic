@@ -1,9 +1,9 @@
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : '127.0.0.1',
+  host     : 'penguinclassic.chl09dgpxexv.ap-northeast-1.rds.amazonaws.com',
   user     : 'root',
   password : '95052910',
-  database : 'penguin'
+  database : 'penguinclassic'
 });
  
 connection.connect(function(err) {
