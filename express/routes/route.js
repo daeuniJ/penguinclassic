@@ -3,20 +3,20 @@ const router =  express.Router();
 const fs = require('fs');
 const path = require('path');
 const db = require('./../db.js');
-const multer  = require('multer');
+// const multer  = require('multer');
 
-const upload = multer({
-  storage: multer.diskStorage({
-    destination(req, file, done) {
-      done(null, 'public/uploads/'); //폴더에 저장공간을 만들어 준 것
-    },
-    filename(req, file, done) {
-      const ext = path.extname(file.originalname); //파일의 확장자명을 뽑아내는 것
-      done(null, path.basename(file.originalname, ext)+ Date.now() + ext) //파일명+날짜+확장자명을 뽑아내는 것
-    }
-  }),
-  limits : {fileSize: 1024*1024*2} //1024뒤에 붙는 숫자가 메가바이트 / -> 2메가까지 업로드 가능
-})
+// const upload = multer({
+//   storage: multer.diskStorage({
+//     destination(req, file, done) {
+//       done(null, 'public/uploads/');
+//     },
+//     filename(req, file, done) {
+//       const ext = path.extname(file.originalname); 
+//       done(null, path.basename(file.originalname, ext)+ Date.now() + ext) 
+//     }
+//   }),
+//   limits : {fileSize: 1024*1024*2}
+// })
 
 
 //메인페이지
