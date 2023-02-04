@@ -62,4 +62,19 @@ router.get('/signUp', (req, res) => {
   res.render('signUp_page');
 });
 
+//출판사소개 페이지
+router.get('/brandintro', (req, res) => {
+  res.render('brandintro');
+});
+
+//도서 페이지
+router.get('/books', (req, res) => {
+  res.render('books_page');
+});
+
+//작가 페이지
+router.get('/writer', (req, res) => {
+  res.render('writer_page');
+});
+
 module.exports = router;
