@@ -43,6 +43,7 @@
 }
 .booksConBox{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 44.6%;
     height: auto;
@@ -63,4 +64,16 @@
 }
 .inner_booktxt>p:first-child{
     margin-bottom: 30px;
+}
+
+@media (max-width:1000px) {
+    .booksConBox>*{
+    width: 100%;
+    text-align: center;
+    }
+    .booksConBox img{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 }
