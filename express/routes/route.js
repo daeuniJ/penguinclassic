@@ -3,20 +3,6 @@ const router =  express.Router();
 const fs = require('fs');
 const path = require('path');
 const db = require('./../db.js');
-// const multer  = require('multer');
-
-// const upload = multer({
-//   storage: multer.diskStorage({
-//     destination(req, file, done) {
-//       done(null, 'public/uploads/');
-//     },
-//     filename(req, file, done) {
-//       const ext = path.extname(file.originalname); 
-//       done(null, path.basename(file.originalname, ext)+ Date.now() + ext) 
-//     }
-//   }),
-//   limits : {fileSize: 1024*1024*2}
-// })
 
 
 //메인페이지
