@@ -49,22 +49,24 @@
     flex-direction: column;
     margin-top: 20px;
 }
-.listCon_txt>p{
+.listCon_date>h4{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+}
+.listCon_txt>p:nth-child(2){
     /* height: calc(30% - 15px); */
     margin-top: 30px;
     text-overflow: ellipsis;
     overflow: hidden;
     word-break: break-word;
     display: -webkit-box;
-    -webkit-box-orient: vertical
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; 
 }
-.listCon_txt>p:nth-child(1){
-   -webkit-line-clamp: 2; 
-}
-.listCon_txt>p:nth-child(2){
-   -webkit-line-clamp: 4; 
-}
-
 .notiW_btn_wrap{
     margin-top: 20px;
     text-align: right;

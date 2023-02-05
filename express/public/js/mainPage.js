@@ -1,7 +1,6 @@
 //  ********* 책 소개 섹션** 스와이퍼 *********
 var swiper = new Swiper(".mySwiper_bookInfo", {
   slidesPerView: 6,
-  // spaceBetween: 30,
   centeredSlides: true,
   // loop: true,
   loopFillGroupWithBlank: true,
