@@ -45,6 +45,9 @@ form{
   border-top: 2px solid #ff6815;
   border-bottom: 1px solid #ff6815;
 }
+textarea{
+  outline: none;
+}
 
 /* 메인페이지 제목 */
 .mainTitle{
