@@ -46,12 +46,19 @@
   position: absolute;
   left: 21%;
 }
+.gnb.bgColor{
+  background-color: #231F20;
+}
+.gnb.actvie{
+  background-color: #231F20;
+}
 .gnb>ul{
   display: flex;
   justify-content: space-between;
 }
 .gnb>ul li{
   padding: 0 50px;
+  height: 0;
 }
 .gnb>ul a{
   display: block;
@@ -84,6 +91,7 @@
   cursor: pointer;
 }
 .h_openBar{
+  display: none;
   width: 26px; height: 32px;
 }
 .h_line{
@@ -91,6 +99,7 @@
   width: 26px; height: 3px;
   background-color: #fff;
   margin: 3px auto;
+  cursor: pointer;
 }
 .h_line1{
   margin-left: 5px;
@@ -102,7 +111,18 @@
 .h_line3{
   margin-left: 2px;
 }
-
+.h_openBar.active .h_line{
+  transform: rotate(30deg);
+}
+.h_openBar.active .h_line1{
+  width: 10px;
+}
+.h_openBar.active .h_line2{
+  width: 15px;
+}
+.h_openBar.active .h_line3{
+  width: 20px;
+}
 
 /* 반응형 1536px */
 @media (max-width: 1536px) {
@@ -146,8 +166,35 @@
 
 /* 반응형 1220px */
 @media (max-width: 1220px) {
+  .headerWrap.active{
+    top: -40px;
+    line-height: 160px;
+    background-color: #231F20;
+  }
   .gnb{
     display: none;
+    backdrop-filter: blur(3px);
+    /* background-color: #231F20; */
+  }
+  .gnb>ul a{
+    color: #fff;
+  }
+  .gnb.active{
+    display: block;
+    width: 30%;
+    height: 95vh;
+    top: 119px;
+    left: 70%;
+  }
+  .gnb.active>ul{
+    flex-direction: column;
+    align-items: end;
+  }
+  .gnb>ul li{
+    height: 80px;
+  }
+  .h_openBar{
+    display: block;
   }
   .logo{
     left: 25px;
