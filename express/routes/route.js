@@ -95,6 +95,11 @@ router.get('/signUp', (req, res) => {
   res.render('signUp_page');
 });
 
+//회원가입 액션
+router.post('/signupP', (req,res)=>{
+  res.render('mainPage');
+});
+
 //출판사소개 페이지
 router.get('/brandintro', (req, res) => {
   res.render('brandintro');

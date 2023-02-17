@@ -14,11 +14,11 @@
 </section>
 <article class="termsOfUse">
     <div class="termsOfUse_wrap w1280">
-        <form class="touForm" action="/signUp">
+        <form class="touForm" action="">
             <div class="termsOfUse_title">
                 <p class="f_bold">이용약관</p>
                 <div>
-                    <input type="checkbox" id="agreement1">
+                    <input type="checkbox" id="agreement1" onclick="is_checked()">
                     <label for="CheckA">동의<span> (필수)</span></label>
                 </div>
             </div>
@@ -112,7 +112,7 @@
             <div class="termsOfUse_title">
                 <p class="f_bold">개인정보 수집, 제공 및 활용 동의</p>
                 <div>
-                    <input type="checkbox" id="agreement2">
+                    <input type="checkbox" id="agreement2" onclick="is_checked()">
                     <label for="CheckA">동의<span> (선택)</span></label>
                 </div>
             </div>
@@ -187,4 +187,4 @@ o Safari : 환경설정 메뉴 선택 > 개인정보 탭 선택 > 쿠키 및 웹
     </div>
 </article>
 
-<script src="../public/js/termsOfUse_page.js"></script>
+<script src="js/termsOfUse_page.js"></script>
