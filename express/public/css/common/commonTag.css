@@ -49,6 +49,12 @@ textarea{
   outline: none;
 }
 
+pre{
+  white-space: pre-wrap;
+  word-break:  break-all;
+  overflow: auto;
+}
+
 /* 메인페이지 제목 */
 .mainTitle{
   color: #fff;
