@@ -1,38 +1,38 @@
 <section class="topArea">
-    <img src="img/topArea/topArea_notice.jpg">
-    <div class="inner_topArea w1510">
-        <h2>수정 페이지 <span>Notice Modify</span></h2>
-    </div>
+  <img src="img/topArea/topArea_notice.jpg" alt="수정페이지 배너 이미지" />
+  <div class="inner_topArea w1510">
+    <h2>수정 페이지 <span>Notice Modify</span></h2>
+  </div>
 </section>
 <section class="topArea_tit">
-    <div class="w1510">
-        <div class="topArea_txt">
-            <h3>공지 수정</h3>
-        </div>
+  <div class="w1510">
+    <div class="topArea_txt">
+      <h3>공지 수정</h3>
     </div>
+  </div>
 </section>
 <form action="/updateNoti" method="post">
-    <input type="hidden" name="id" value="<%= row.id %>">
-<div class="form_wrap w1280">
+  <input type="hidden" name="id" value="<%= row.id %>" />
+  <div class="form_wrap w1280">
     <div>
-        <label class="write_label">작성자 :&nbsp;</label>
-        <input type="text" name="writer" class="conBox conBoxA" value="<%= row.writer %>">
+      <label class="write_label">작성자 :&nbsp;</label>
+      <input type="text" name="writer" class="conBox conBoxA" value="<%= row.writer %>" />
     </div>
     <div>
-        <label class="write_label notiLabelT">날&ensp;짜 :&nbsp;</label>
-        <input type="date" name="date" class="conBox conBoxA" value="<%= row.date %>">
+      <label class="write_label notiLabelT">날&ensp;짜 :&nbsp;</label>
+      <input type="date" name="date" class="conBox conBoxA" value="<%= row.date %>" />
     </div>
     <div>
-        <label class="write_label notiLabelT">제&ensp;목 :&nbsp;</label>
-        <input type="text" name="title" class="conBox" value="<%= row.title %>">
+      <label class="write_label notiLabelT">제&ensp;목 :&nbsp;</label>
+      <input type="text" name="title" class="conBox" value="<%= row.title %>" />
     </div>
     <div class="write_content">
-        <label class="write_label notiLabelT">내&ensp;용 :&nbsp;</label>
-        <textarea name="cont" id="content" cols="100" rows="10"><%= row.cont %></textarea>
+      <label class="write_label notiLabelT">내&ensp;용 :&nbsp;</label>
+      <textarea name="cont" id="content" cols="100" rows="10"><%= row.cont %></textarea>
     </div>
-</div>
-<div class="btnWrap w1280">
-    <input type="submit" value="수정" class="btnClick" onclick="location.href='/noticeUpdate'">
-    <input type="button" value="취소" class="btnBack" onclick="location.href='/noticeList'">
-</div>
+  </div>
+  <div class="btnWrap w1280">
+    <input type="submit" value="수정" class="btnClick" onclick="location.href='/noticeUpdate'" />
+    <input type="button" value="취소" class="btnBack" onclick="location.href='/noticeList'" />
+  </div>
 </form>

@@ -1,42 +1,42 @@
 <section class="topArea">
-    <img src="img/topArea/topArea_notice.jpg">
-    <div class="inner_topArea w1510">
-        <h2>공지사항 <span>Notice Board</span></h2>
-    </div>
+  <img src="img/topArea/topArea_notice.jpg" alt="공지사항 배너 이미지" />
+  <div class="inner_topArea w1510">
+    <h2>공지사항 <span>Notice Board</span></h2>
+  </div>
 </section>
 <section class="topArea_tit">
-    <div class="w1510">
-        <div class="topArea_txt">
-            <h3>공지</h3>
-            <p>펭귄클래식코리아의 다양한 소식을 만나보세요.</p>
-        </div>
+  <div class="w1510">
+    <div class="topArea_txt">
+      <h3>공지</h3>
+      <p>펭귄클래식코리아의 다양한 소식을 만나보세요.</p>
     </div>
+  </div>
 </section>
 <article class="noticeList">
-    <div class="noticeList_wrap w1280">
-        <div class="noticeCon_list">
-            <ul>
-                <% rows.forEach((row,index) =>{ %> 
-                <li>
-                    <input type="hidden" name="id" value="<%= row.id %>" />
-                    <a onclick="javascript:location.href='/noticeCon?id=<%= row.id %>'">
-                    <div class="hoverBox">
-                    </div>
-                    <div class="listCon_date">
-                        <p><%= row.date %></p>
-                        <h4><%= row.title %></h4>
-                    </div>
-                    <div class="listCon_txt">
-                        <p class="f_bold"><%= row.writer %></p>
-                        <p class="f_regular"><%= row.cont %></p>
-                        </div>
-                </a></li>
-                <% }); %>
-            </ul>
-        </div>
-        <div class="notiW_btn_wrap">
-            <input type="button" value="글쓰기" class="notiW_btn" onclick="javascript:location.href='/noticeWrite'">
-        </div>
-        <!-- <div class="notice_searchBox"></div> -->
+  <div class="noticeList_wrap w1280">
+    <div class="noticeCon_list">
+      <ul>
+        <% rows.forEach((row,index) =>{ %>
+        <li>
+          <input type="hidden" name="id" value="<%= row.id %>" />
+          <a onclick="javascript:location.href='/noticeCon?id=<%= row.id %>'">
+            <div class="hoverBox"></div>
+            <div class="listCon_date">
+              <p><%= row.date %></p>
+              <h4><%= row.title %></h4>
+            </div>
+            <div class="listCon_txt">
+              <p class="f_bold"><%= row.writer %></p>
+              <p class="f_regular"><%= row.cont %></p>
+            </div>
+          </a>
+        </li>
+        <% }); %>
+      </ul>
     </div>
+    <div class="notiW_btn_wrap">
+      <input type="button" value="글쓰기" class="notiW_btn" onclick="javascript:location.href='/noticeWrite'" />
+    </div>
+    <!-- <div class="notice_searchBox"></div> -->
+  </div>
 </article>
